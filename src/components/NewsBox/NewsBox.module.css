@@ -1,0 +1,143 @@
+.container {
+  background-color: #b99474;
+
+  min-width: 220px;
+  position: relative;
+  margin: 5vh 2vw 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.containerimage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s all;
+  transform-origin: center;
+}
+.img:hover {
+  cursor: pointer;
+}
+.activeimg {
+  transform: scale(1.2);
+}
+.info,
+.moreinfo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--lightblue);
+  height: 20%;
+  width: 100%;
+  transition: 0.5s all;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title,
+.viewMore {
+  transition: 0.5s all;
+  min-width: 40%;
+  min-height: 50%;
+  font-size: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 30px 30px 0;
+  white-space: nowrap;
+  padding: 0.2vw;
+}
+.viewMore {
+  background-color: var(--blue);
+  color: rgb(255, 255, 255);
+  border-radius: 30px 0 0 30px;
+  min-width: 20%;
+  border-right: 0px;
+}
+.smallMore {
+  font-size: max(0.8vw, 10px);
+  padding-left: 1vw;
+}
+.moreinfo {
+  height: 10%;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.smallInfo {
+  height: 30%;
+}
+.smallInfo .viewMore{
+  background-color: var(--red);
+  color: rgb(255, 255, 255);
+
+
+}
+.smallMoreInfo {
+  height: 20%;
+}
+.date,
+.category {
+  margin: 1vw;
+  font-size: max(1vw, 15px);
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.smallMoreInfo .date {
+  font-size: max(0.7vw, 10px) !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.smallMoreInfo .category {
+  font-size: max(0.7vw, 10px) !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.active {
+  bottom: 20%;
+}
+.smallMoreInfo.active {
+  bottom: 30%;
+}
+.small {
+  font-size: max(0.8vw, 10px);
+  min-width: 55%;
+  font-weight: 700;
+}
+
+/* animations */
+
+.viewMore:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.red {
+  background-color: var(--red);
+  color: white;
+}
+@media (max-width: 900px) {
+  .container {
+    width: 90% !important;
+  min-height: 300px;
+
+  }
+  .smallContainer {
+    min-height: 100px;
+  }
+}

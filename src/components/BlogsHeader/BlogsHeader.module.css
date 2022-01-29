@@ -1,0 +1,36 @@
+.container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  flex-wrap: wrap;
+padding: 1vw;
+}
+
+.li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 7vh;
+
+    transition: 1s all ease-out;
+    color: black;
+    border-radius: 10px;
+    padding:  0 20px;
+    box-sizing: border-box;
+    font-size: max(1vw , 15px);
+    font-weight: 100;
+    margin-top: 1vh;
+}
+.active {
+    background-color: var(--blue);
+    color: white;
+
+}
+.li:hover {
+    color: white;
+
+    cursor: pointer;
+}

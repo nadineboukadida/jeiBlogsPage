@@ -1,0 +1,28 @@
+
+*{
+  margin: 0;
+  font-family: montessart;
+
+}
+:root{
+  
+  --red: #B21610;
+  --blue: #1C3144;
+  --lightblue: #BFD1E5;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: sansation;
+  src: url(./assets/fonts/sansation.ttf);
+}
+@font-face {
+  font-family: montessart;
+  src: url(./assets/fonts/Montessart.ttf);
+}

@@ -1,0 +1,44 @@
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  flex-wrap: wrap;
+padding: 1vw;
+}
+
+.li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 5vh;
+
+    transition: 1s color ease-out;
+    color: rgb(161, 161, 161);
+    border-radius: 10px;
+    padding:  0 10px;
+    box-sizing: border-box;
+    font-size: max(1vw , 15px);
+    font-weight: 100;
+}
+.active {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+}
+.li:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+    cursor: pointer;
+}
+.list {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
