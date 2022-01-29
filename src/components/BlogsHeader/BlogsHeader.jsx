@@ -26,7 +26,7 @@ const BlogsHeader = () => {
   };
   return (
     <div className={style.container}>
-      {list("Projects", 1)}
+      {list("Projects",1)}
       {list("Events", 2)}
       {list("Articles", 3)}
       {list("Projects", 4)}
